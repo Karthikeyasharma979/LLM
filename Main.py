@@ -23,6 +23,7 @@ col1,col2 = st.columns(2)
 ques = col1.text_input("Enter the Query : ")
 key = col2.text_input("Enter the Key : ")
 os.environ["HUGGINGFACEHUB_API_TOKEN"]="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"
+os.environ["HF_TOKEN"]="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"
 res = st.button("Submit")
 if res :
     str = ai(ques)
